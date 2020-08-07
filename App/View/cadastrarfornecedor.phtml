@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wshop | Ecommerce</title>
+
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+
+    
+    </head>
+
+    <body>
+    
+    <div id="container">
+      <h1>Cadastro de fornecedor</h1>
+
+     
+      <form method = 'POST' action="/salvarfornecedor" enctype="multipart/form-data"> 
+        <div>
+            <label for="nome">Nome: </label>
+            <input required type="text" placeholder="Seu nome" id="nome", name="nome">
+        </div>  
+   
+        <div>
+                <label for="logo">Logo: </imagem>
+                <input required type="file" name="logo" id="logo" > 
+            </div>
+        <div>
+            <textarea required name="descricao" placeholder="Descrição..."></textarea>
+        </div>
+
+        <div>
+            <label for="site">Site: </label>
+            <input placeholder="http://www.exemplo.com" value="http://" type="url" name="site" id="site">
+        </div>
+   
+        <div><button>Cadastrar</button></div>
+        </form>
+
+    </div>
+
+
+      
+    
+    </body>
+</html>

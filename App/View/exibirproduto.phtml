@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wshop | Ecommerce</title>
+
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+
+        <link href="/font/css/fontawesome.css" rel="stylesheet">
+        <link href="/font/css/brands.css" rel="stylesheet">
+        <link href="/font/css/solid.css" rel="stylesheet">
+
+
+    
+    </head>
+
+    <body>
+    
+    <div id="container">
+
+          
+                <div class="produto">
+
+                    <div class="imagem">
+                            <img class="img" src="<?=$produto['imagem']?> " width="200" height="250">
+                    </div>
+
+                    <div class="info" id="info">
+                        <h2 id="nome"><?=$produto['nome']?> (<?=$produto['nome_fornecedor']?>) </h2>
+                        <h2 id="preco" class="preco">R$<?=$produto['preco']?></h2>
+                        
+                        <div id="descricao" class="descricao">
+                            <?=$produto['descricao']?> 
+                        </div>
+                    </div>
+                    <div>
+                       
+                    <a href="/editar?id=<?=$produto['id']?>"><button><i class="fas fa-edit"></i></button>
+
+                    <a href="/excluir?id=<?=$produto['id']?>"> <button class="exluir"><i class="fas fa-trash-alt"></i></button></a>
+
+                    </div>
+
+
+                </div>
+            
+
+
+                 
+
+
+        
+
+
+     <div>      
+     
+
+    </body>
+</html>

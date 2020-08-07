@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wshop | Ecommerce</title>
+
+        <link rel="stylesheet"  type="text/css" href="css/style.css">
+
+    
+    </head>
+
+    <body>
+    
+    <div id="container">
+   
+
+        <?php foreach($produtos as $key => $value){
+                       
+            
+                        
+
+         ?>
+            <a href="/produto?id=<?=$value['id']?> ">
+                <div class="produto">
+
+                    <div class="imagem">
+                            <img class="img" src="<?=$value['imagem']?> " width="200" height="250">
+                    </div>
+
+                    <div class="info">
+                        <h2><?=$value['nome']?> (<?=$value['nome_fornecedor']?>) </h2>
+                        <h2 class="preco">R$<?=$value['preco']?></h2>
+                        
+                        <div class="descricao">
+                            <?=$value['descricao']?> 
+                        </div>
+                    </div>
+
+
+                </div>
+            </a>
+
+
+                        <?php } ?>
+
+
+        
+
+
+     <div>      
+     
+
+    </body>
+</html>
